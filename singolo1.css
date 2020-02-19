@@ -140,6 +140,8 @@ p {
   background: url("/assets/img/serviceBackGround.png") center no-repeat;
   background-size: cover;
   margin: 0 auto;
+  border-bottom: 6px solid #fff;
+  height: 500px;
 }
 
 h1 {
@@ -170,16 +172,18 @@ h1 {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 940px;
+  
 }
 
 .service-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service-block-item {
   display: flex;
   margin-top: 47px;
-  width: 33.33333%;
+  width: 300px;
 }
 
 .service-image {
@@ -210,13 +214,32 @@ h3 {
 }
 
 .service-block-item:nth-child(2) {
-  margin-left: 18px;
+  margin-left: 19px;
 }
 
 .service-block-item:nth-child(3) {
-  margin-left: 18px;
+  margin-left: 20px;
 }
 
 .service-block-item:nth-child(3) h3 {
   margin-left: 22px;
 }
+
+.service-block-item:nth-child(4) {
+  margin-top: 13px;
+}
+
+.service-block-item:nth-child(5) {
+  margin-top: 13px;
+  margin-left: 19px;
+}
+
+.service-block-item:nth-child(6) {
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.service-block-item:nth-child(6) h3 {
+  margin-left: 22px;
+}
+
