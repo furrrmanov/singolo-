@@ -61,13 +61,27 @@ p {
   margin-right: 40px;
 }
 
-.nav-link {
+/*.nav-link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -0.3px;
   line-height: 30px;
+  font-size: 12px;
+  margin-right: 31px;
+  transition: color 0.2s linear;
+  position: relative;
+}*/
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  line-height: 30px;
+  zoom: 96%;
   font-size: 12px;
   margin-right: 31px;
   transition: color 0.2s linear;
@@ -149,10 +163,10 @@ h1 {
   line-height: 30px;
   color: #666d89;
   font-weight: 900;
-  letter-spacing: -0.6px;
+  letter-spacing: -.15px;
   padding-top: 62px;
   padding-left: 40px;
-  word-spacing: 3px;
+  word-spacing: .1px;
 }
 
 .subtitle {
@@ -162,9 +176,9 @@ h1 {
   line-height: 30px;
   padding-top: 21px;
   letter-spacing: -0.1px;
-  word-spacing: 2px;
   margin-left: 40px;
   margin-right: 40px;
+  text-align: justify;
 }
 
 .service-block {
@@ -172,7 +186,6 @@ h1 {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 940px;
-  
 }
 
 .service-flex {
@@ -194,11 +207,13 @@ h1 {
 .service-txt {
   display: flex;
   flex-direction: column;
+  margin-left: 0px;
 }
 
 h3 {
   color: #666d89;
   font-size: 18px;
+  letter-spacing: -.1px;
   font-weight: 900;
   margin-top: -4px;
   margin-left: 20px;
@@ -211,6 +226,20 @@ h3 {
   line-height: 21px;
   margin-top: 8px;
   margin-left: 20px;
+}
+
+.service-txt1 {
+  word-spacing: 5px;
+}
+
+.service-txt2 {
+  word-spacing: 0.5px;
+}
+
+.service-txt3 {
+  margin-left: 2.3px;
+  word-spacing: 0.1px;
+  line-height: 22px;
 }
 
 .service-block-item:nth-child(2) {
@@ -226,20 +255,19 @@ h3 {
 }
 
 .service-block-item:nth-child(4) {
-  margin-top: 13px;
+  margin-top: 31px;
 }
 
 .service-block-item:nth-child(5) {
-  margin-top: 13px;
+  margin-top: 31px;
   margin-left: 19px;
 }
 
 .service-block-item:nth-child(6) {
-  margin-top: 13px;
+  margin-top: 31px;
   margin-left: 20px;
 }
 
 .service-block-item:nth-child(6) h3 {
   margin-left: 22px;
 }
-
