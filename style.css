@@ -308,7 +308,8 @@ h3 {
   margin-right: 10px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -.3px;
+  font-family: "Lato",serif;
+  letter-spacing: -.1px;
   text-align: justify;
   color: #767e9e;
   background: transparent;
@@ -317,9 +318,34 @@ h3 {
   border-radius: 5px;
 }
 
-.filter-item:hover,
-.filter-item--active {
+.filter-item:nth-child(1) {
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 1px;
+  line-height: 18px;
+  width: 29px;
+  font-weight: 400;
+  font-family: "Lato",serif;
+  letter-spacing: -.1px;
+  text-align: justify;
+  color: #767e9e;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid rgb(102, 109, 137);
+  border-radius: 5px;
+}
+
+
+
+
+
+.filter-item.active {
+  border:1px solid #fff ;
   color: #fff;
+}
+
+.filter-item:hover{
+  background-color: rgba(255, 255, 255,80%);
 }
 
 
