@@ -503,16 +503,17 @@ h3 {
   border: none;
   background-color: #d6564f;
   font-stretch: extra-condensed;
-  letter-spacing: 1px;
-  word-spacing: -1px;
+  word-spacing: .7px;
   color: rgb(0, 0, 0);
 }
 
 .input-name::placeholder {
+  font-family: "Lato",serif;
+  word-spacing: -.1px;
   color: #f48c8f;
   font-size: 12px;
   font-weight: 400;
-  line-height: 15px;
+  
 }
 
 .input-mail {
@@ -564,7 +565,7 @@ h3 {
   border: none;
   resize: none;
   padding-left: 15px;
-  padding-top: 5px;
+  padding-top: 7px;
   margin-top: 16px;
   border-radius: 5px;
   width: 619px;
