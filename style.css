@@ -33,7 +33,7 @@ p {
 /*Header____________________________________________*/
 
 .header {
-  background: url("/assets/img/HeaderBackGround.png");
+  background: url("./assets/img/HeaderBackGround.png");
   height: 95px;
   border-bottom: 6px solid #323746;
 }
@@ -68,18 +68,6 @@ p {
   margin-right: 40px;
 }
 
-/*.nav-link {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: -0.3px;
-  line-height: 30px;
-  font-size: 12px;
-  margin-right: 31px;
-  transition: color 0.2s linear;
-  position: relative;
-}*/
 
 .nav-link {
   color: #fff;
@@ -119,7 +107,7 @@ p {
 
 /*Slider_____________________________________________*/
 .slide {
-  background: url("/assets/img/SliderBackGround.png");
+  background: url("./assets/img/SliderBackGround.png");
   border-bottom: 6px solid #ea676b;
 }
 
@@ -158,7 +146,7 @@ p {
 /*Service_________________________________________*/
 
 .service {
-  background: url("/assets/img/serviceBackGround.png") center no-repeat;
+  background: url("./assets/img/serviceBackGround.png") center no-repeat;
   background-size: cover;
   margin: 0 auto;
   border-bottom: 6px solid #fff;
@@ -289,7 +277,7 @@ h3 {
 /*Portfolio_________________________________________*/
 
 .portfolio {
-  background: url("/assets/img/PortfolioBg.png");
+  background: url("./assets/img/PortfolioBg.png");
   border-bottom: 6px solid #323746;
 }
 
@@ -354,7 +342,7 @@ h3 {
 
 .about {
   padding-top: 59px;
-  background: url("/assets/img/AboutBg.png");
+  background: url("./assets/img/AboutBg.png");
   border-bottom: 6px solid #fff;
 }
 
@@ -445,7 +433,7 @@ h3 {
 /*Quote____________________________________________-*/
 
 .quote {
-  background: url("/assets/img/QuoteBg.png");
+  background: url("./assets/img/QuoteBg.png");
   border-bottom: 6px solid #ea676b;
 }
 
@@ -618,7 +606,7 @@ h3 {
   left: -20px;
   margin-top: 1px;
   position: absolute;
-  content: url("/assets/img/location.png");
+  content: url("./assets/img/location.png");
 }
 
 .contact-tel {
@@ -640,7 +628,7 @@ h3 {
   left: -22px;
   margin-top: 1px;
   position: absolute;
-  content: url("/assets/img/phone.png");
+  content: url("./assets/img/phone.png");
 }
 
 .contact-email {
@@ -661,7 +649,7 @@ h3 {
   left: -23px;
   margin-top: 1px;
   position: absolute;
-  content: url("/assets/img/mail.png");
+  content: url("./assets/img/mail.png");
 }
 
 .form__submit {
@@ -693,7 +681,7 @@ h3 {
 /*Footer____________________________________________*/
 
 .footer {
-  background: url("/assets/img/footerBg.png");
+  background: url("./assets/img/footerBg.png");
 }
 
 .footer-inner{
