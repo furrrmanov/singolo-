@@ -498,6 +498,7 @@ h3 {
 .input-name {
   width: 619px;
   height: 38px;
+  padding-left: 15px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -512,13 +513,13 @@ h3 {
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
-  padding-left: 15px;
 }
 
 .input-mail {
   width: 619px;
   height: 38px;
   border-radius: 5px;
+  padding-left: 15px;
   border: none;
   background-color: #d6564f;
   margin-top: 16px;
@@ -530,7 +531,6 @@ h3 {
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
-  padding-left: 15px;
   font-stretch: extra-condensed;
   letter-spacing: 0.9px;
   word-spacing: -2px;
@@ -540,6 +540,7 @@ h3 {
   width: 619px;
   height: 38px;
   border-radius: 5px;
+  padding-left: 15px;
   border: none;
   background-color: #d6564f;
   margin-top: 16px;
@@ -552,7 +553,6 @@ h3 {
   font-weight: 400;
   font-family: "Lato", serif;
   line-height: 21.5px;
-  padding-left: 15px;
   font-stretch: extra-condensed;
   letter-spacing: -0.1px;
   word-spacing: -2px;
@@ -563,6 +563,8 @@ h3 {
   background: none;
   border: none;
   resize: none;
+  padding-left: 15px;
+  padding-top: 5px;
   margin-top: 16px;
   border-radius: 5px;
   width: 619px;
@@ -579,9 +581,6 @@ h3 {
   font-stretch: extra-condensed;
   letter-spacing: -0.1px;
   word-spacing: 0.3px;
-
-  padding-top: 5px;
-  padding-left: 13px;
 }
 
 .focus:focus {
