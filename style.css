@@ -33,7 +33,7 @@ p {
 /*Header____________________________________________*/
 
 .header {
-  background: url("assets/img/HeaderBackGround.png");
+  background: url("./assets/img/HeaderBackGround.png");
   height: 95px;
   border-bottom: 6px solid #323746;
 }
@@ -681,7 +681,7 @@ h3 {
 /*Footer____________________________________________*/
 
 .footer {
-  background: url("assets/img/footerBg.png");
+  background: url("./assets//img/footerBg.png");
 }
 
 .footer-inner{
