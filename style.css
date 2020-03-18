@@ -121,10 +121,11 @@ p {
 /*Slider_____________________________________________*/
 
 .MainSlider {
-  position: relative;;
+  position: relative;
   width: 100%;
   max-width: 1020px;
   overflow: hidden;
+  display: flex;
 }
 
 .slide-inner {
@@ -137,6 +138,7 @@ p {
   border-bottom: 6px solid #ea676b;
   width: 1020px;
   height: 594px;
+  position: absolute;
 }
 
 
@@ -167,6 +169,7 @@ p {
   height: 600px;
   width: 1020px;
   border-bottom: 6px solid #648bf0;
+  position: absolute;
 }
 
 .slide {
@@ -184,13 +187,13 @@ p {
 
 .arrow-left {
   position: absolute;
-  margin-top: -319px;
+  margin-top: 281px;
   margin-left: 42px;
 }
 
 .arrow-right {
   position: absolute;
-  margin-top: -319px;
+  margin-top: 281px;
   margin-left: 964px;
 }
 
