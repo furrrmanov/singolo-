@@ -36,7 +36,8 @@ p {
   background: url("./assets/img/HeaderBackGround.png");
   height: 95px;
   border-bottom: 6px solid #323746;
-  width: 1020px;
+  max-width: 1020px;
+  width: 100%;
 }
 
 .sticky {
@@ -74,8 +75,7 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 35px;
-  margin-left: 454px;
-  margin-right: 40px;
+  margin-right: 10px;
 }
 
 .nav-link {
@@ -837,23 +837,24 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  margin-left: -42px;
   width: 1020px;
 }
 
 .copyright {
   margin-top: 30px;
-  margin-left: 1px;
+  margin-left: 30px;
   font-weight: 400;
   word-spacing: -0.6px;
   color: #666d89;
   font-size: 12px;
-  display: none;
+  
 }
 
 .footer-social {
   display: flex;
   margin-top: 22px;
-  margin-left: 380px;
+  margin-right: 42px;
 }
 
 .footer-link {
@@ -940,7 +941,8 @@ html {
     background: url("./assets/img/HeaderBackGround.png");
     height: 95px;
     border-bottom: 6px solid #323746;
-    width: 100%;
+    width: 768px;
+    overflow: hidden;
   }
 
   /*Nav_______________________________________________*/
@@ -1025,13 +1027,13 @@ html {
 
   .arrow-left {
     position: absolute;
-    margin-top: -260px;
+    margin-top: 260px;
     margin-left: 30.12px;
   }
 
   .arrow-right {
     position: absolute;
-    margin-top: -260px;
+    margin-top: 260px;
     margin-left: 725px;
   }
 
@@ -1115,7 +1117,7 @@ html {
     background: url("assets/img/PortfolioBg.png");
     border-bottom: 6px solid #323746;
     width: 768px;
-    height: 1094px;
+    height: 1094.4px;
   }
 
   .portfolio-title {
@@ -1420,22 +1422,22 @@ html {
   .footer {
     background: url("./assets//img/footerBg.png");
     width: 768px;
+    overflow: hidden;
   }
 
   .copyright {
     margin-top: 30px;
-    margin-left: 1px;
+    margin-left: 84px;
     font-weight: 400;
     word-spacing: -0.6px;
     color: #666d89;
     font-size: 12px;
-    display: none;
   }
 
   .footer-social {
     display: flex;
     margin-top: 22px;
-    margin-left: 308px;
+    margin-right: 280px;
   }
 
   .footer-link {
@@ -1523,7 +1525,12 @@ html {
     background: url("./assets/img/HeaderBackGround.png");
     height: 95px;
     border-bottom: 6px solid #323746;
-    width: 100%;
+    width: 375px;
+    overflow: hidden;
+  }
+
+  .logo {
+    margin-left: 148px;
   }
 
   /*Nav_______________________________________________*/
@@ -1532,25 +1539,28 @@ html {
     justify-content: center;
     padding-top: 35px;
     margin-left: -454px;
-    margin-right: 20px;
+    overflow: hidden;
+    display: none;
   }
 
   .MainSlider {
     position: relative;
     width: 375px;
     height: 218.5px;
+    overflow: hidden;
   }
 
-  .slide1 {
-    background: url("assets/img/SliderBackGround.png");
-    border-bottom: 6px solid #ea676b;
-  }
 
   .slide-inner {
     display: flex;
     padding-top: 23.07px;
     padding-bottom: 55px;
-    width: 292.65px;
+    width: 375px;
+
+    background: url("assets/img/SliderBackGround.png");
+    border-bottom: 6px solid #ea676b;
+    overflow: hidden;
+    position: absolute;
   }
 
   .phone-vert {
@@ -1593,7 +1603,6 @@ html {
   }
 
   .slide2 {
-    height: px;
     width: 375px;
     border-bottom: 6px solid #648bf0;
   }
@@ -1778,12 +1787,15 @@ html {
 
   /*About Us__________________________________________*/
 
+
   .about {
     padding-top: 33px;
     background: url("assets/img/AboutBg.png");
+    background-size: cover;
     border-bottom: 6px solid #fff;
     width: 375px;
-    padding-left: 30px;
+
+    overflow: hidden;
   }
 
   .about-title {
@@ -1791,6 +1803,7 @@ html {
     font-weight: 900;
     color: #666d89;
     letter-spacing: -0.1px;
+    overflow: hidden;
   }
 
   .about-subtitle {
@@ -1802,16 +1815,19 @@ html {
     line-height: 30px;
     width: 315px;
     height: 220px;
+    overflow: hidden;
   }
 
   .photo {
     display: flex;
     padding-top: 14px;
+    overflow: hidden;
   }
 
   .photo-item {
     width: 314px;
     height: 314px;
+    overflow: hidden;
   }
 
   .photo-flex {
@@ -1819,24 +1835,29 @@ html {
     flex-wrap: wrap;
     padding-bottom: 14px;
     margin-right: 19px;
+    overflow: hidden;
   }
 
   .foto-inner {
-    width: 100%;
+    width: 375px;
+    overflow: hidden;
   }
 
   .foto-inner:nth-child(3) {
     width: 100%;
     margin-left: 2px;
+    overflow: hidden;
   }
 
   .foto-inner:nth-child(2) {
     margin-top: 34px;
+    overflow: hidden;
   }
 
   .foto-inner:nth-child(3) img {
     margin-left: -0.1px;
     margin-top: 34px;
+    overflow: hidden;
   }
 
   .name {
@@ -1848,6 +1869,7 @@ html {
     padding-top: 18px;
     letter-spacing: -0.1px;
     margin-left: -0.5px;
+    overflow: hidden;
   }
 
   .subName {
@@ -1859,18 +1881,20 @@ html {
     width: 314px;
     height: 47px;
     margin-top: 5px;
-    margin-left: -0.05px;
+    overflow: hidden;
   }
 
   .social-icon {
     margin-top: 24px;
     margin-left: 0.5px;
+    overflow: hidden;
   }
 
   .social-icon img {
     margin-right: 5px;
     cursor: pointer;
     transition: 0.2s linear;
+    overflow: hidden;
   }
 
   .social-icon img:hover {
@@ -1908,7 +1932,7 @@ html {
   .form {
     display: flex;
     margin-top: 19px;
-    width: 442px;
+    width: 375px;
   }
 
   .input-name {
@@ -1997,7 +2021,7 @@ html {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
-    margin-left: -440px;
+    margin-left: -375px;
     margin-top: 460px;
     padding-bottom: 42px;
   }
@@ -2092,6 +2116,12 @@ html {
   .footer {
     background: url("./assets//img/footerBg.png");
     width: 375px;
+    overflow: hidden;
+  }
+
+  .footer-inner {
+    width: 375px;
+    margin-right: 20px;
   }
 
   .copyright {
@@ -2107,7 +2137,7 @@ html {
   .footer-social {
     display: flex;
     margin-top: 22px;
-    margin-left: 100px;
+    margin-left: 150px;
   }
 
   .footer-link {
