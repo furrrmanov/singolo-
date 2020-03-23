@@ -266,7 +266,19 @@ function myFunction() {
   }
 }
 
-console.log(sticky)
+
+/*  burger menu*/
+
+let burger = document.querySelector('.header_burger')
+burger.addEventListener('click',handlerBurger)
+function handlerBurger(event){
+  let target = event.target
+  target.classList.toggle('burger_active')
+  let nav = document.querySelector('.nav')
+  nav.classList.toggle('nav_active')
+  let logo = document.querySelector('.logo')
+  logo.classList.toggle('logo_active')
+}
 
 
 

@@ -33,11 +33,16 @@ p {
 /*Header____________________________________________*/
 
 .header {
-  background: url("./assets/img/HeaderBackGround.png");
+  /*background: url("./assets/img/HeaderBackGround.png");*/
+  background-color: #2D303A;
   height: 95px;
   border-bottom: 6px solid #323746;
   max-width: 1020px;
   width: 100%;
+}
+
+.header_burger {
+  display: none;
 }
 
 .sticky {
@@ -141,7 +146,6 @@ p {
   position: absolute;
 }
 
-
 .phone-vert {
   margin-left: 112px;
   position: relative;
@@ -166,7 +170,7 @@ p {
 }
 
 .slide2 {
-  height: 600px;
+  height: 100%;
   width: 1020px;
   border-bottom: 6px solid #648bf0;
   position: absolute;
@@ -202,7 +206,6 @@ p {
   cursor: pointer;
 }
 
-
 .active,
 .next {
   display: block;
@@ -228,19 +231,19 @@ p {
 
 @keyframes left {
   from {
-    left:0;
+    left: 0;
   }
   to {
-    left:-100%;
+    left: -100%;
   }
 }
 
 @keyframes right {
   from {
-    left:100%;
+    left: 100%;
   }
   to {
-    left:0%
+    left: 0%;
   }
 }
 
@@ -848,7 +851,6 @@ h3 {
   word-spacing: -0.6px;
   color: #666d89;
   font-size: 12px;
-  
 }
 
 .footer-social {
@@ -927,6 +929,7 @@ html {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    max-width: 768px;
     font-family: "Lato", sans-serif;
   }
 
@@ -938,11 +941,18 @@ html {
   /*Header____________________________________________*/
 
   .header {
-    background: url("./assets/img/HeaderBackGround.png");
+    /*background: url("./assets/img/HeaderBackGround.png");*/
+    background-color: #2D303A;
+    background-size: cover;
     height: 95px;
     border-bottom: 6px solid #323746;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     overflow: hidden;
+  }
+
+  .logo {
+    margin-left: 40px;
   }
 
   /*Nav_______________________________________________*/
@@ -956,18 +966,20 @@ html {
 
   .MainSlider {
     position: relative;
-  }
-
-  .slide1 {
-    background: url("assets/img/SliderBackGround.png");
-    border-bottom: 6px solid #ea676b;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
+    height: 447.25px;
   }
 
   .slide-inner {
     display: flex;
     padding-top: 53px;
     padding-bottom: 55px;
+
+    background: url("assets/img/SliderBackGround.png");
+    background-size: cover;
+    border-bottom: 6px solid #ea676b;
+    width: 768px;
   }
 
   .phone-vert {
@@ -1010,13 +1022,13 @@ html {
   }
 
   .slide2 {
-    height: px;
     width: 768px;
+    background-color: rgb(100, 139, 240);;
     border-bottom: 6px solid #648bf0;
   }
 
   .slide2 img {
-    height: 600px;
+    height: 445.4px;
     width: 768px;
   }
 
@@ -1028,13 +1040,14 @@ html {
   .arrow-left {
     position: absolute;
     margin-top: 260px;
-    margin-left: 30.12px;
+    margin-left: 29.42px;
   }
 
   .arrow-right {
     position: absolute;
     margin-top: 260px;
     margin-left: 725px;
+    margin-right: 26.88;
   }
 
   .arrow-left,
@@ -1054,6 +1067,11 @@ html {
     height: 691px;
   }
 
+  h1 {
+    margin-left: 41px;
+    padding-left: 0px;
+  }
+
   .subtitle {
     font-size: 18px;
     color: #767e9e;
@@ -1061,7 +1079,7 @@ html {
     line-height: 30px;
     padding-top: 21px;
     letter-spacing: -0.1px;
-    margin-left: 40px;
+    margin-left: 41px;
     margin-right: 40px;
     text-align: justify;
     overflow: hidden;
@@ -1077,15 +1095,15 @@ html {
   }
 
   .service-block-item:nth-child(1) {
-    margin-left: 17px;
+    /*margin-left: 17px;*/
   }
 
   .service-block-item:nth-child(2) {
-    margin-left: 19px;
+    margin-left: 53px;
   }
 
   .service-block-item:nth-child(3) {
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   .service-block-item:nth-child(3) h3 {
@@ -1094,21 +1112,21 @@ html {
 
   .service-block-item:nth-child(4) {
     margin-top: 45px;
-    margin-left: 25px;
+    margin-left: 53px;
   }
 
   .service-block-item:nth-child(5) {
     margin-top: 31px;
-    margin-left: 19px;
+    margin-left: 0px;
   }
 
   .service-block-item:nth-child(6) {
     margin-top: 31px;
-    margin-left: 20px;
+    margin-left: 53px;
   }
 
   .service-block-item:nth-child(6) h3 {
-    margin-left: 22px;
+    /* margin-left: 22px;*/
   }
 
   /*Portfolio_________________________________________*/
@@ -1126,7 +1144,7 @@ html {
     font-weight: 900;
     color: #666d89;
     letter-spacing: -0.2px;
-    margin-left: 39px;
+    margin-left: 41px;
   }
 
   .portfolio-subtitle {
@@ -1136,14 +1154,14 @@ html {
     padding-top: 22px;
     word-spacing: 0.6px;
     letter-spacing: -0.1px;
-    margin-left: 39px;
+    margin-left: 41px;
     width: 650px;
   }
 
   .filter {
     padding-top: 15px;
     display: flex;
-    margin-left: 39px;
+    margin-left: 41px;
     outline: none;
   }
 
@@ -1176,9 +1194,23 @@ html {
   .about {
     padding-top: 59px;
     background: url("assets/img/AboutBg.png");
+    background-size: cover;
     border-bottom: 6px solid #fff;
     height: 676, 6px;
-    padding-left: 42px;
+  }
+
+  .about-title {
+    margin-left: 40px;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: 900;
+    color: #666d89;
+    white-space: nowrap;
+
+    padding-top: 12px;
+    letter-spacing: -0.1px;
   }
 
   .about-subtitle {
@@ -1189,12 +1221,14 @@ html {
     padding-top: 18px;
     line-height: 30px;
     width: 688px;
+    margin-left: 40px;
   }
 
   .photo {
     display: flex;
     padding-top: 45px;
     width: 688px;
+    margin-left: 42px;
   }
 
   .photo-item {
@@ -1204,7 +1238,8 @@ html {
 
   .foto-inner:nth-child(3) {
     width: 33.33%;
-    margin-left: 2px;
+    margin-right: 0px;
+    /* margin-left: 2px;*/
   }
 
   /*_________________________________________About Us*/
@@ -1215,14 +1250,13 @@ html {
     background: url("assets/img/QuoteBg.png");
     border-bottom: 6px solid #ea676b;
     position: relative;
-    padding-left: 42px;
   }
 
   .quote-title {
     font-size: 30px;
     font-weight: 900;
     color: #f0d8d9;
-    margin-left: -40px;
+    margin-left: 42px;
     word-spacing: 0.8px;
   }
 
@@ -1233,6 +1267,7 @@ html {
     line-height: 30px;
 
     margin-top: 14px;
+    margin-left: 42px;
     width: 689px;
     height: 96px;
   }
@@ -1240,6 +1275,7 @@ html {
   .form {
     display: flex;
     margin-top: 19px;
+    margin-left: 39px;
     width: 442px;
   }
 
@@ -1327,7 +1363,7 @@ html {
 
   .info {
     margin-top: 42px;
-    margin-left: 20px;
+    margin-left: 29px;
     display: flex;
     flex-direction: column;
   }
@@ -1427,7 +1463,7 @@ html {
 
   .copyright {
     margin-top: 30px;
-    margin-left: 84px;
+    margin-left: 81px;
     font-weight: 400;
     word-spacing: -0.6px;
     color: #666d89;
@@ -1506,6 +1542,8 @@ html {
   }
 }
 
+/*   Media (max-width:375px)                             */
+
 @media screen and (max-width: 375px) {
   body {
     margin: 0 auto;
@@ -1523,33 +1561,115 @@ html {
 
   .header {
     background: url("./assets/img/HeaderBackGround.png");
-    height: 95px;
-    border-bottom: 6px solid #323746;
+    height: 71px;
     width: 375px;
-    overflow: hidden;
+    border: none;
+    background-blend-mode: darken;
   }
 
+
+ 
   .logo {
-    margin-left: 148px;
+    margin-right: 135px;
+    margin-left: 0px;
+    margin-top: 24px;
+    padding: 0px;
+    padding-bottom: 23px;
+    z-index: 2;
+    font-size: 19.6px;
+    line-height: 24px;
+  }
+
+  .logo_active {
+    transform: translateX(-81px);
+    transition: .4s linear;
   }
 
   /*Nav_______________________________________________*/
   .nav {
-    display: flex;
+    position: absolute;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 35px;
-    margin-left: -454px;
-    overflow: hidden;
+    padding-top: 205px;
+    margin-left: 0px;
+    width: 278px;
+    left: -100%;
+    height: 100vh;
+    background-color: #2D303A;
+    z-index: 1;
+    box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav_active {
+    display: block;
+    position: fixed;
+    transform: translateX(135%);
+    transition: .4s ease-in-out;
+    
+  }
+
+  .nav-link {
+    margin: 0px;
+    margin-top: 27px;
+    margin-left: 71px;
+    display: block;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .nav-link::after{
     display: none;
+  }
+
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    margin-top: 26px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+
+  .burger_line {
+    position: absolute;
+    background-color: #fff;
+    width: 25px;
+    height: 2.4px;
+    margin-top: -2.2px;
+    top: 50%;
+    border-radius: 5px;
+  }
+
+  .burger_line::before,
+  .burger_line::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 25px;
+    height: 2.4px;
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  .burger_line::before {
+    transform: translateY(-6.4px);
+  }
+
+  .burger_line::after {
+    transform: translateY(6.4px);
+  }
+
+  .burger_active {
+    transform: rotate(90deg);
+    transition: .4s ease-in-out;
   }
 
   .MainSlider {
     position: relative;
     width: 375px;
-    height: 218.5px;
+    height: 218.38px;
     overflow: hidden;
   }
-
 
   .slide-inner {
     display: flex;
@@ -1619,14 +1739,14 @@ html {
 
   .arrow-left {
     position: absolute;
-    margin-top: -500px;
-    margin-left: 10.71px;
+    margin-top: 98.26px;
+    margin-left: 9.76px;
   }
 
   .arrow-right {
     position: absolute;
-    margin-top: -500px;
-    margin-left: 350.41px;
+    margin-top: 98.26px;
+    margin-left: 351.29px;
   }
 
   .arrow-left,
@@ -1643,7 +1763,11 @@ html {
     background-size: cover;
     margin: 0 auto;
     border-bottom: 6px solid #fff;
-    height: 1032px;
+    height: 960px;
+  }
+
+  .service-flex {
+    margin-left: -16px;
   }
 
   h1 {
@@ -1653,8 +1777,12 @@ html {
     font-weight: 900;
     letter-spacing: -0.15px;
     padding-top: 25.3px;
-    padding-left: 40px;
     word-spacing: 0.1px;
+    margin-left: 32px;
+  }
+  p {
+    width: 220px;
+    height: 77px;
   }
 
   .subtitle {
@@ -1684,15 +1812,16 @@ html {
     display: flex;
     margin-top: 25px;
     width: 300px;
+    margin-top: 15px;
     overflow: hidden;
   }
 
   .service-block-item:nth-child(1) {
-    margin-left: 17px;
+    margin-left: 15px;
   }
 
   .service-block-item:nth-child(2) {
-    margin-left: 19px;
+    margin-left: 15px;
   }
 
   .service-block-item:nth-child(3) {
@@ -1704,18 +1833,18 @@ html {
   }
 
   .service-block-item:nth-child(4) {
-    margin-top: 45px;
-    margin-left: 25px;
+    margin-top: 20px;
+    margin-left: 15px;
   }
 
   .service-block-item:nth-child(5) {
-    margin-top: 31px;
-    margin-left: 19px;
+    margin-top: 20px;
+    margin-left: 15px;
   }
 
   .service-block-item:nth-child(6) {
-    margin-top: 31px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
   }
 
   .service-block-item:nth-child(6) h3 {
@@ -1728,7 +1857,7 @@ html {
     background: url("assets/img/PortfolioBg.png");
     border-bottom: 6px solid #323746;
     width: 375px;
-    height: 1094px;
+    height: 844px;
   }
 
   .portfolio-title {
@@ -1737,7 +1866,7 @@ html {
     font-weight: 900;
     color: #666d89;
     letter-spacing: -0.2px;
-    margin-left: 39px;
+    margin-left: 30px;
   }
 
   .portfolio-subtitle {
@@ -1747,7 +1876,7 @@ html {
     padding-top: 14px;
     word-spacing: 0.6px;
     letter-spacing: -0.1px;
-    margin-left: 39px;
+    margin-left: 30px;
     width: 315px;
     height: 96px;
   }
@@ -1755,7 +1884,7 @@ html {
   .filter {
     padding-top: 14px;
     display: flex;
-    margin-left: 39px;
+    margin-left: 30px;
   }
 
   .portfolio-album {
@@ -1770,7 +1899,7 @@ html {
     margin-top: 25px;
     width: 315px;
     margin-left: 30px;
-    max-height: 794px;
+    max-height: 550px;
   }
 
   .portfolio-img {
@@ -1787,14 +1916,14 @@ html {
 
   /*About Us__________________________________________*/
 
-
   .about {
     padding-top: 33px;
     background: url("assets/img/AboutBg.png");
     background-size: cover;
     border-bottom: 6px solid #fff;
     width: 375px;
-
+    margin-left: 0px;
+    padding-left: 0px;
     overflow: hidden;
   }
 
@@ -1803,6 +1932,7 @@ html {
     font-weight: 900;
     color: #666d89;
     letter-spacing: -0.1px;
+    margin-left: 30px;
     overflow: hidden;
   }
 
@@ -1815,13 +1945,14 @@ html {
     line-height: 30px;
     width: 315px;
     height: 220px;
+    margin-left: 30px;
     overflow: hidden;
   }
 
   .photo {
     display: flex;
     padding-top: 14px;
-    overflow: hidden;
+    margin-left: 0px;
   }
 
   .photo-item {
@@ -1834,30 +1965,27 @@ html {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 14px;
-    margin-right: 19px;
     overflow: hidden;
   }
 
   .foto-inner {
-    width: 375px;
-    overflow: hidden;
-  }
-
-  .foto-inner:nth-child(3) {
+    width: 314px;
     width: 100%;
-    margin-left: 2px;
-    overflow: hidden;
   }
 
   .foto-inner:nth-child(2) {
     margin-top: 34px;
-    overflow: hidden;
+    margin-left: 30px;
   }
 
-  .foto-inner:nth-child(3) img {
-    margin-left: -0.1px;
+  .foto-inner:nth-child(3) {
     margin-top: 34px;
-    overflow: hidden;
+    margin-left: 30px;
+  }
+
+  .foto-inner:nth-child(1) {
+    margin-top: 34px;
+    margin-left: 30px;
   }
 
   .name {
@@ -1868,7 +1996,7 @@ html {
 
     padding-top: 18px;
     letter-spacing: -0.1px;
-    margin-left: -0.5px;
+    width: 314px;
     overflow: hidden;
   }
 
@@ -1881,12 +2009,16 @@ html {
     width: 314px;
     height: 47px;
     margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: justify;
     overflow: hidden;
   }
 
   .social-icon {
     margin-top: 24px;
-    margin-left: 0.5px;
+    margin-left: 1px;
+    width: 314px;
     overflow: hidden;
   }
 
@@ -1910,12 +2042,16 @@ html {
     background: url("assets/img/QuoteBg.png");
     border-bottom: 6px solid #ea676b;
     position: relative;
-    padding-left: 42px;
     width: 375px;
-    padding-left: 30px;
-    padding-top: 44px;
+    padding-left: 0px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .quote-title {
+    margin-top: 44px;
+    margin-left: 30px;
   }
 
   .quote-subtitle {
@@ -1925,20 +2061,22 @@ html {
     line-height: 30px;
 
     margin-top: 14px;
+    margin-left: 30px;
     width: 314px;
     height: 214px;
   }
 
   .form {
     display: flex;
-    margin-top: 19px;
+    margin-top: 22px;
+    margin-left: 0px;
     width: 375px;
   }
 
   .input-name {
     width: 315px;
     height: 38px;
-    padding-left: 15px;
+    margin-left: 30px;
     border-radius: 5px;
     border: none;
     background-color: #d6564f;
@@ -1963,7 +2101,7 @@ html {
     width: 315px;
     height: 38px;
     border-radius: 5px;
-    padding-left: 15px;
+    margin-left: 30px;
     border: none;
     background-color: #d6564f;
     margin-top: 16px;
@@ -1974,7 +2112,7 @@ html {
     width: 315px;
     height: 38px;
     border-radius: 5px;
-    padding-left: 15px;
+    margin-left: 30px;
     border: none;
     background-color: #d6564f;
     margin-top: 16px;
@@ -1986,7 +2124,7 @@ html {
     background: none;
     border: none;
     resize: none;
-    padding-left: 15px;
+    margin-left: 30px;
     padding-top: 7px;
     margin-top: 16px;
     border-radius: 5px;
@@ -2005,7 +2143,7 @@ html {
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 30px;
 
     margin-bottom: 14px;
 
@@ -2021,7 +2159,7 @@ html {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
-    margin-left: -375px;
+    margin-left: -345px;
     margin-top: 460px;
     padding-bottom: 42px;
   }
