@@ -278,6 +278,8 @@ function handlerBurger(event){
   nav.classList.toggle('nav_active')
   let logo = document.querySelector('.logo')
   logo.classList.toggle('logo_active')
+  let navShadow = document.querySelector('.site-header__nav-shadow')
+  navShadow.classList.toggle('active')
 }
 
 

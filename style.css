@@ -1564,7 +1564,7 @@ html {
     height: 71px;
     width: 375px;
     border: none;
-    background-blend-mode: darken;
+    opacity: 1;
   }
 
 
@@ -1606,6 +1606,30 @@ html {
     transform: translateX(135%);
     transition: .4s ease-in-out;
     
+  }
+
+  .site-header__nav-shadow {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: #2D303A;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    opacity: 0;
+
+    left: -100%;
+    transition: opacity .27s ease-in-out,
+                left .27s step-end;
+  }
+
+  .site-header__nav-shadow.active {
+    position: fixed;
+    opacity: 0.6;
+    left: 0;
+
+    transition: opacity .27s ease-in-out,
+                left .27s step-start;
   }
 
   .nav-link {
