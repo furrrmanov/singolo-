@@ -253,8 +253,7 @@ function handlerBurger(event){
 let avgHeight = 0;
 const SECTIONs = document.querySelectorAll('.anchor');
 SECTIONs.forEach(el => {
-    avgHeight += el.offsetHeight; 
-    
+    avgHeight += el.offsetHeight;
 });
 
 let ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
@@ -284,10 +283,16 @@ document.addEventListener('scroll', event => {
   if (document.documentElement.scrollTop + document.documentElement.clientHeight === document.documentElement.scrollHeight) {
     nav.querySelector('.active').classList.remove('.active');
     menuList[menuList.length - 1].classList.add('active');
-}
-  if (nav.querySelector('.active') === null) {
-    menuList[0].classList.add('active');
-}
+  }
+
+  if (document.documentElement.scrollTop==0){
+    let li = nav.querySelectorAll('.nav-link')
+    for(let i = 0; i < li.length;i++){
+      li[i].classList.remove('active')
+    }
+    nav.querySelector('.nav-link').classList.add('active')
+  }
+
 });
 
 
