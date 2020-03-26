@@ -2317,9 +2317,9 @@ html {
     display: flex;
     display: none;
     top: 50%;
-    left: 30%;
+    left: 0;
     width: 400px;
-    height: 200px;
+    height: 300px;
     background-color: rgba(251, 199, 95, 0.61);
     border-radius: 10px;
     transition: 0.2s ease;
@@ -2335,15 +2335,15 @@ html {
   }
 
   .theme {
-    margin-top: 10px;
+    margin-top: -30px;
   }
   .description {
-    margin-top: 10px;
+    margin-top: -30px;
     flex-wrap: wrap;
   }
 
   .close {
-    margin-top: 20px;
+    margin-top: -20px;
     margin-left: 30px;
     width: 40px;
     height: 25px;

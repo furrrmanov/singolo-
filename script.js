@@ -7,41 +7,6 @@ phones.forEach((el)=>{
 })
 
 
-/*let Left = document.querySelector(".arrow-left");
-let Right = document.querySelector(".arrow-right");
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.querySelectorAll(".slider");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for ( i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-  
-}
-
-Left.onclick = function() {
-  plusSlides(-1);
-  console.log("left");
-};
-
-Right.onclick = function() {
-  plusSlides(1);
-  console.log("right");
-};*/
 
 /*  animation slider____________________________ */
 
