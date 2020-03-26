@@ -250,4 +250,44 @@ function handlerBurger(event){
 
 
 
+let avgHeight = 0;
+const SECTIONs = document.querySelectorAll('.anchor');
+SECTIONs.forEach(el => {
+    avgHeight += el.offsetHeight; 
+    
+});
+
+let ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
+ScrollOffset = (ScrollOffset < 30) ? document.querySelector('.header').offsetHeight : ScrollOffset;
+
+
+
+document.addEventListener('scroll', event => {
+  let curPos = window.scrollY + ScrollOffset;
+  const elList = document.querySelectorAll('.anchor');
+  const menuList =  nav.querySelectorAll('a');
+  
+  elList.forEach(el => {
+      if ((el.offsetTop) <= curPos && (el.offsetTop + el.offsetHeight - 60) > curPos) {
+        
+          menuList.forEach(li => {            
+             li.classList.remove('active');
+              if (el.getAttribute('id') === li.getAttribute('href').substring(1)) {
+                
+                li.classList.add('active');
+              }
+          });
+      }
+     
+  });
+
+  if (document.documentElement.scrollTop + document.documentElement.clientHeight === document.documentElement.scrollHeight) {
+    nav.querySelector('.active').classList.remove('.active');
+    menuList[menuList.length - 1].classList.add('active');
+}
+  if (nav.querySelector('.active') === null) {
+    menuList[0].classList.add('active');
+}
+});
+
 
