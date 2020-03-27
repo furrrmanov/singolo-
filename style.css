@@ -984,6 +984,7 @@ html {
 
   .phone-vert {
     margin-left: 83.95px;
+    top:-20px;
     position: relative;
   }
   .phone-vert img {
@@ -1002,7 +1003,7 @@ html {
   }
 
   .phone-hor {
-    margin-top: 121px;
+    margin-top: 75px;
     margin-left: 73px;
     position: relative;
   }
@@ -1039,13 +1040,13 @@ html {
 
   .arrow-left {
     position: absolute;
-    margin-top: 260px;
+    margin-top: 212px;
     margin-left: 29.42px;
   }
 
   .arrow-right {
     position: absolute;
-    margin-top: 260px;
+    margin-top: 212px;
     margin-left: 725px;
     margin-right: 26.88;
   }
@@ -1709,6 +1710,7 @@ html {
 
   .phone-vert {
     margin-left: 41.18px;
+    top: 0px;
     position: relative;
   }
   .phone-vert img {
@@ -1786,6 +1788,8 @@ html {
     background: url("assets/img/serviceBackGround.png") center no-repeat;
     background-size: cover;
     margin: 0 auto;
+    max-width: 375px;
+    width: 100%;
     border-bottom: 6px solid #fff;
     height: 960px;
   }
